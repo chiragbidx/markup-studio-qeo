@@ -2,8 +2,8 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MailSpring - Smarter Email Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MailSpring - The Ultimate Email Marketing Platform</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,430 +21,427 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-blue-50 text-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-slate-100">
   <!-- Navbar -->
-  <header class="sticky top-0 z-40 border-b border-white/20 bg-white/70 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-950/70">
+  <header class="sticky top-0 z-50 border-b border-white/20 bg-white/90 backdrop-blur-xl dark:border-slate-800/70 dark:bg-slate-950/90">
     <nav>
-      <div class="mx-auto flex w-full max-w-[1600px] items-center justify-between px-4 py-4 sm:px-6">
+      <div class="container mx-auto max-w-[1600px] flex items-center justify-between px-4 py-4 sm:px-6">
         <a href="#hero" class="flex items-center gap-3 transition hover:opacity-90">
-          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 via-blue-600 to-cyan-500 text-white shadow-xl">
-            <span class="text-sm font-bold">MS</span>
+          <div class="flex h-12 w-12 items-center justify-center rounded-3xl bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-600 text-white shadow-lg">
+            <span class="text-lg font-extrabold select-none">MS</span>
           </div>
-          <span class="text-xl font-bold tracking-tight">MailSpring</span>
+          <span class="text-2xl font-extrabold tracking-tight">MailSpring</span>
         </a>
-        <div class="hidden items-center gap-6 md:flex">
-          <a href="#features" class="text-sm font-medium transition hover:text-indigo-600">Features</a>
-          <a href="#how-it-works" class="text-sm font-medium transition hover:text-indigo-600">How it Works</a>
-          <a href="#testimonials" class="text-sm font-medium transition hover:text-indigo-600">Testimonials</a>
-          <a href="#faq" class="text-sm font-medium transition hover:text-indigo-600">FAQ</a>
-          <a href="components-showcase.html" class="text-sm font-medium transition hover:text-indigo-600">Components</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#features" class="text-sm font-semibold hover:text-indigo-600 transition">Features</a>
+          <a href="#use-cases" class="text-sm font-semibold hover:text-indigo-600 transition">Use Cases</a>
+          <a href="#testimonials" class="text-sm font-semibold hover:text-indigo-600 transition">Testimonials</a>
+          <a href="#faq" class="text-sm font-semibold hover:text-indigo-600 transition">FAQ</a>
+          <a href="#pricing" class="text-sm font-semibold hover:text-indigo-600 transition">Pricing</a>
         </div>
-        <div class="hidden md:flex md:items-center md:gap-3">
-          <button type="button" id="theme-toggle" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60" aria-label="Toggle theme">
-            <svg id="icon-sun" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="icon-moon" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <div class="hidden md:flex items-center gap-4">
+          <button id="theme-toggle" type="button" aria-label="Toggle theme" 
+            class="rounded-lg p-2 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+            <svg id="icon-sun" class="h-6 w-6 hidden dark:block" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <svg id="icon-moon" class="h-6 w-6 block dark:hidden" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
           </button>
-          <a href="#final-cta" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-6 py-2.5 text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:scale-[1.05]">Start Free Trial</a>
+          <a href="#final-cta" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-700 via-blue-700 to-cyan-600 px-7 py-3 text-sm font-semibold text-white shadow-lg hover:scale-[1.06] transition">Start Free Trial</a>
         </div>
-        <div class="flex items-center gap-1 md:hidden">
-          <button type="button" id="theme-toggle-mobile" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60" aria-label="Toggle theme">
-            <svg id="icon-sun-mobile" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            <svg id="icon-moon-mobile" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-          </button>
-          <button type="button" id="mobile-menu-btn" class="rounded-xl p-2 transition hover:bg-slate-200/50 dark:hover:bg-slate-800/60 md:hidden" aria-label="Toggle menu">
-            <svg id="icon-menu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            <svg id="icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
-          </button>
-        </div>
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" class="md:hidden rounded-lg p-2 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+          <svg id="icon-menu" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="icon-close" class="h-7 w-7 hidden" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
       </div>
-      <div id="mobile-menu" class="hidden border-t border-white/20 bg-white/90 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-950/90 md:hidden">
-        <div class="mx-auto flex max-w-[1600px] flex-col gap-2 px-4 py-3 sm:px-6">
-          <a href="#features" class="mobile-link rounded-lg px-2 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-slate-800">Features</a>
-          <a href="#how-it-works" class="mobile-link rounded-lg px-2 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-slate-800">How it Works</a>
-          <a href="#testimonials" class="mobile-link rounded-lg px-2 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-slate-800">Testimonials</a>
-          <a href="#faq" class="mobile-link rounded-lg px-2 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-slate-800">FAQ</a>
-          <a href="components-showcase.html" class="mobile-link rounded-lg px-2 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:text-slate-200 dark:hover:bg-slate-800">Components</a>
-          <a href="#final-cta" class="mobile-link mt-1 inline-flex justify-center rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-4 py-2 text-sm font-semibold text-white">Start Free Trial</a>
+      <div id="mobile-menu" class="hidden bg-white dark:bg-slate-950 border-t border-white/20 dark:border-slate-800">
+        <div class="max-w-[1600px] mx-auto flex flex-col py-3 px-5 gap-3">
+          <a href="#features" class="mobile-link block rounded-lg px-3 py-3 text-base font-semibold text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900">Features</a>
+          <a href="#use-cases" class="mobile-link block rounded-lg px-3 py-3 text-base font-semibold text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900">Use Cases</a>
+          <a href="#testimonials" class="mobile-link block rounded-lg px-3 py-3 text-base font-semibold text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900">Testimonials</a>
+          <a href="#faq" class="mobile-link block rounded-lg px-3 py-3 text-base font-semibold text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900">FAQ</a>
+          <a href="#pricing" class="mobile-link block rounded-lg px-3 py-3 text-base font-semibold text-indigo-700 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-900">Pricing</a>
+          <a href="#final-cta" class="mobile-link mt-2 inline-flex justify-center rounded-full bg-gradient-to-r from-indigo-700 via-blue-700 to-cyan-600 px-6 py-3 font-semibold text-white shadow-lg">Start Free Trial</a>
         </div>
       </div>
     </nav>
   </header>
 
   <main>
-    <div class="mx-auto w-full max-w-[1600px] px-4 sm:px-6">
+    <div class="max-w-[1600px] mx-auto px-5 sm:px-6">
       <!-- Hero -->
-      <section id="hero" class="py-16 sm:py-28">
-        <div class="grid items-center gap-16 lg:grid-cols-2">
-          <div>
-            <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-[11px] sm:text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">Powerful Email Marketing</span>
-            <h1 class="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl bg-gradient-to-r from-slate-900 via-indigo-700 to-blue-600 bg-clip-text text-transparent dark:from-white dark:via-indigo-400 dark:to-blue-400">Grow Your Business with Smarter Email Marketing</h1>
-            <p class="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-300">MailSpring helps you create, send, and track powerful email campaigns—no coding required.</p>
-            <div class="mt-8 flex flex-wrap items-center gap-4">
-              <a href="#final-cta" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:scale-[1.05]">Start Free Trial</a>
-              <a href="#how-it-works" class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold transition hover:bg-white/60 dark:border-slate-700 dark:hover:bg-slate-800/40">See How It Works<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 5.293a1 1 0 011.414 0L17 8.586a2 2 0 010 2.828l-3.293 3.293a1 1 0 01-1.414-1.414L13.586 11H5a1 1 0 110-2h8.586l-1.293-1.293a1 1 0 010-1.414z"/></svg></a>
+      <section id="hero" class="pt-20 pb-24 lg:pb-28">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
+            <h1 class="text-5xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-indigo-700 via-blue-700 to-cyan-600 text-transparent bg-clip-text dark:from-indigo-400 dark:via-blue-400 dark:to-cyan-400">Grow Your Business with Smarter Email Marketing</h1>
+            <p class="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-300">MailSpring empowers small businesses and startups to create, send, and analyze email campaigns without fuss. No coding. Instant results.</p>
+            <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+              <a href="#final-cta" class="btn-primary inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-indigo-700 via-blue-700 to-cyan-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:scale-105 transition-transform">Start Free Trial</a>
+              <a href="#how-it-works" class="inline-flex items-center gap-2 rounded-full border border-indigo-600 px-6 py-4 text-lg font-semibold text-indigo-700 hover:bg-indigo-50 transition">See How It Works<svg class="h-5 w-5 text-indigo-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a>
             </div>
-            <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
-              <span>Free 14-day trial</span>
-              <span class="hidden h-1 w-1 rounded-full bg-slate-300 sm:inline-block"></span>
-              <span>No credit card required</span>
+            <div class="mt-6 text-sm text-indigo-600 dark:text-indigo-400 flex flex-wrap justify-center lg:justify-start gap-3">
+              <span>14-day free trial</span><span aria-hidden="true" class="w-1 h-1 rounded-full bg-indigo-600 inline-block"></span><span>No credit card needed</span>
             </div>
           </div>
-          <div class="relative">
-            <div id="hero-slider" class="relative overflow-hidden rounded-3xl border border-white/30 bg-white/70 shadow-2xl backdrop-blur-xl dark:border-slate-700/50 dark:bg-slate-900/60">
-              <div class="relative h-80 sm:h-96 lg:h-[28rem]">
-                <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-700" data-index="0">
-                  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80" alt="Campaign planning dashboard" class="h-full w-full object-cover">
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  <div class="absolute bottom-6 left-6 text-white">
-                    <span class="rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase">Planning</span>
-                    <h3 class="mt-2 text-lg font-semibold">Plan campaigns with ease</h3>
-                    <p class="text-sm text-white/80">Organize contacts, offers, and schedules all in one place.</p>
-                  </div>
-                </div>
-                <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700" data-index="1">
-                  <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Email automation and scheduling" class="h-full w-full object-cover">
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  <div class="absolute bottom-6 left-6 text-white">
-                    <span class="rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase">Automation</span>
-                    <h3 class="mt-2 text-lg font-semibold">Automate your campaigns</h3>
-                    <p class="text-sm text-white/80">Schedule and trigger emails to the right audience at the right time.</p>
-                  </div>
-                </div>
-                <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700" data-index="2">
-                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="Campaign analytics dashboard" class="h-full w-full object-cover">
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  <div class="absolute bottom-6 left-6 text-white">
-                    <span class="rounded-full bg-white/20 px-3 py-1 text-xs font-medium uppercase">Analytics</span>
-                    <h3 class="mt-2 text-lg font-semibold">Track results in real time</h3>
-                    <p class="text-sm text-white/80">Monitor opens, clicks, and conversions to optimize your messaging.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="absolute bottom-4 right-4 flex gap-1.5">
-                <button type="button" class="hero-dot h-1.5 w-5 rounded-full bg-blue-400 transition-all" data-index="0" aria-label="Slide 1"></button>
-                <button type="button" class="hero-dot h-1.5 w-2 rounded-full bg-white/60 transition-all hover:bg-white/80" data-index="1" aria-label="Slide 2"></button>
-                <button type="button" class="hero-dot h-1.5 w-2 rounded-full bg-white/60 transition-all hover:bg-white/80" data-index="2" aria-label="Slide 3"></button>
-              </div>
-            </div>
+          <div class="max-w-lg mx-auto lg:mx-0 relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-indigo-700 via-blue-700 to-cyan-600">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="MailSpring Email Marketing Dashboard Screenshot" class="w-full rounded-3xl object-cover object-center shadow-lg" />
           </div>
         </div>
       </section>
 
-      <!-- Trusted by -->
-      <section id="trusted-by" class="border-y border-white/20 py-16 dark:border-slate-800/60">
-        <div class="mx-auto max-w-5xl text-center">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">Trusted by over 5,000 small businesses</p>
-          <div class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm font-medium text-slate-500 sm:gap-x-16 dark:text-slate-400">
-            <span class="tracking-tight" aria-label="Logo placeholder for Apex Solutions">Apex Solutions</span>
-            <span class="tracking-tight" aria-label="Logo placeholder for BrightPath Marketing">BrightPath Marketing</span>
-            <span class="tracking-tight" aria-label="Logo placeholder for CloudNine Tech">CloudNine Tech</span>
-            <span class="tracking-tight" aria-label="Logo placeholder for Dynamic Startups">Dynamic Startups</span>
-            <span class="tracking-tight" aria-label="Logo placeholder for Echo Enterprises">Echo Enterprises</span>
+      <!-- Trust / Proof -->
+      <section id="trusted-by" class="py-20 border-t border-b border-white/20 dark:border-slate-800/60">
+        <div class="max-w-5xl mx-auto text-center">
+          <p class="text-sm uppercase font-semibold tracking-wide text-slate-500 dark:text-slate-400 mb-8">Trusted by over 5,000 smart businesses</p>
+          <div class="flex flex-wrap justify-center items-center gap-12 mb-12 text-indigo-700 dark:text-indigo-400 font-semibold text-lg select-none">
+            <span aria-label="Logo: Apex Solutions">Apex Solutions</span>
+            <span aria-label="Logo: BrightPath Marketing">BrightPath Marketing</span>
+            <span aria-label="Logo: CloudNine Tech">CloudNine Tech</span>
+            <span aria-label="Logo: Dynamic Startups">Dynamic Startups</span>
+            <span aria-label="Logo: Echo Enterprises">Echo Enterprises</span>
           </div>
-          <blockquote class="mt-12 text-left max-w-2xl mx-auto text-sm text-slate-600 dark:text-slate-400 italic border-l-4 border-indigo-600 pl-4">
-            "MailSpring transformed our email marketing. Campaign setup is effortless and the analytics help us boost our engagement."
-            <footer class="mt-2 font-semibold text-slate-900 dark:text-slate-50">— Chirag D., Founder, Apex Solutions</footer>
+          <blockquote class="relative max-w-3xl mx-auto text-left text-xl italic text-slate-700 dark:text-slate-400 font-semibold border-l-4 border-indigo-700 pl-6">
+            <p>"MailSpring transformed our email marketing. Campaign setup is effortless, and the analytics help us boost our engagement by 35%."</p>
+            <footer class="mt-4 text-lg text-indigo-900 dark:text-indigo-300">– Chirag D., Founder, Apex Solutions</footer>
           </blockquote>
-          <div class="mt-10 flex justify-center gap-8 text-xs text-slate-500 dark:text-slate-400">
-            <span class="flex items-center gap-1"><svg class="h-4 w-4 text-indigo-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16a4 4 0 100-8 4 4 0 000 8z"/></svg> GDPR Compliant</span>
-            <span class="flex items-center gap-1"><svg class="h-4 w-4 text-indigo-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v.01"/><path d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12a8.96 8.96 0 004 7"/></svg> 24/7 Support</span>
+          <div class="mt-12 flex justify-center gap-16 text-sm text-indigo-600 dark:text-indigo-400">
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg>
+              <span>GDPR Compliant</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 13h18M3 6h18M3 18h18"/></svg>
+              <span>24/7 Support</span>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Features -->
-      <section id="features" class="py-10 sm:py-24">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Everything You Need to Succeed</h2>
-          <p class="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">Organize your email campaigns with ease and get results with powerful automation and analytics.</p>
-        </div>
-        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4h16v16H4z"/></svg>
+      <section id="features" class="py-20">
+        <div class="max-w-6xl mx-auto grid gap-16 md:grid-cols-2 lg:grid-cols-3">
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-indigo-600 bg-indigo-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 20h9"/></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Easy Drag-and-Drop Editor</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Build professional emails with no coding using our intuitive visual editor.</p>
-          </article>
-          <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v18m9-9H3"/></svg>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Drag & Drop Email Editor</h3>
+            <p class="text-slate-700 dark:text-slate-400">Create stunning emails easily with no coding. Our intuitive editor saves you time and effort.</p>
+          </div>
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-emerald-600 bg-emerald-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" /></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Automated Campaigns & Scheduling</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Send emails at the perfect time with triggered workflows and scheduled sends.</p>
-          </article>
-          <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 12h18M3 6h18M3 18h18"/></svg>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Automation & Scheduling</h3>
+            <p class="text-slate-700 dark:text-slate-400">Set up triggered campaigns and schedule emails to engage customers at the perfect time.</p>
+          </div>
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-blue-600 bg-blue-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 12l2-2 4 4 8-8 2 2" /></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Real-Time Analytics & Reporting</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Monitor engagement metrics and optimize your campaigns based on live data.</p>
-          </article>
-          <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Real-time Analytics</h3>
+            <p class="text-slate-700 dark:text-slate-400">Understand opens, clicks, conversions and optimize your campaigns with powerful insights.</p>
+          </div>
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-purple-600 bg-purple-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M7 7l10 10M7 17L17 7" /></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Segmentation & Personalization</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Target customers with tailored messages and lists for improved engagement.</p>
-          </article>
-          <article class="group flex flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-400 dark:group-hover:bg-indigo-900/70">
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 8h10M7 12h6m-6 4h10"/></svg>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Segmentation & Personalization</h3>
+            <p class="text-slate-700 dark:text-slate-400">Deliver tailored messages to your audience based on behavior, demographics, and more.</p>
+          </div>
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-pink-600 bg-pink-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 20v-6M12 4v4M4 20h16"/></svg>
             </div>
-            <h3 class="text-base font-semibold text-slate-900 dark:text-slate-50">Integrations with Your Favorite Tools</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Connect with CRM, ecommerce, and other platforms to keep your workflow seamless.</p>
-          </article>
-        </div>
-        <div class="mt-6 text-center">
-          <a href="#final-cta" class="inline-flex text-indigo-600 hover:text-indigo-700 font-semibold text-sm">Try It Free →</a>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Seamless Integrations</h3>
+            <p class="text-slate-700 dark:text-slate-400">Connect MailSpring with your favorite platforms like Shopify, Salesforce, and Zapier.</p>
+          </div>
+          <div class="flex flex-col items-center text-center max-w-sm mx-auto">
+            <div class="text-yellow-600 bg-yellow-100 rounded-full p-4 mb-5 shadow-md">
+              <svg class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 12v6m0 0l-3-3m3 3l3-3" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-indigo-900 dark:text-indigo-300">Deliverability You Can Trust</h3>
+            <p class="text-slate-700 dark:text-slate-400">High inbox placement rates and compliance with industry standards keep your reputation strong.</p>
+          </div>
         </div>
       </section>
 
-      <!-- How it works -->
-      <section id="how-it-works" class="border-t border-white/20 py-10 sm:py-24 dark:border-slate-800/60">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">How MailSpring Works</h2>
-          <p class="mt-3 text-sm text-slate-600 sm:text-base">From sign-up to smarter campaigns in three simple steps.</p>
-        </div>
-        <div class="mt-10 grid gap-8 md:grid-cols-3">
-          <div class="flex flex-col items-start gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-50 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-400">1</div>
-            <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-50">Sign Up in Minutes</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Create your MailSpring account quickly and easily to get started.</p>
-          </div>
-          <div class="flex flex-col items-start gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-50 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-400">2</div>
-            <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-50">Design Your First Campaign</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Use our drag-and-drop editor and templates to build your emails.</p>
-          </div>
-          <div class="flex flex-col items-start gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-50 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-400">3</div>
-            <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-50">Automate & Analyze Results</h3>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Set up automation workflows and monitor campaign performance in real time.</p>
+      <!-- Use Cases -->
+      <section id="use-cases" class="bg-gradient-to-tr from-indigo-50 via-white to-cyan-50 py-20">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8 text-slate-900 dark:text-slate-700">Who Benefits from MailSpring?</h2>
+          <div class="grid gap-12 md:grid-cols-3">
+            <div class="flex flex-col items-center">
+              <div class="text-indigo-600 bg-indigo-100 rounded-full p-5 shadow-lg mb-5">
+                <svg class="h-12 w-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 10h18M3 14h18M3 18h18"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Small Businesses</h3>
+              <p class="text-slate-700 max-w-sm dark:text-slate-600">Simplify marketing with easy-to-use tools that don’t require technical resources.</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="text-blue-600 bg-blue-100 rounded-full p-5 shadow-lg mb-5">
+                <svg class="h-12 w-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Startups</h3>
+              <p class="text-slate-700 max-w-sm dark:text-slate-600">Accelerate growth with automated workflows and detailed campaign insights.</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="text-teal-600 bg-teal-100 rounded-full p-5 shadow-lg mb-5">
+                <svg class="h-12 w-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 12h6"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Marketers</h3>
+              <p class="text-slate-700 max-w-sm dark:text-slate-600">Run sophisticated campaigns faster with intuitive segmentation and testing features.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section id="testimonials" class="py-8 sm:py-24">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">What Our Customers Say</h2>
-          <p class="mt-3 text-sm text-slate-600 sm:text-base">Real stories from small businesses that grew with MailSpring.</p>
-        </div>
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sofia T." class="h-10 w-10 rounded-full object-cover" />
-              <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Sofia T.</div><div class="text-xs text-slate-500 dark:text-slate-400">Marketing Manager, BrightPath Marketing</div></div>
-            </div>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"MailSpring's automation freed up hours each week and increased our campaign ROI significantly."</p>
-          </article>
-          <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Mark R." class="h-10 w-10 rounded-full object-cover" />
-              <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Mark R.</div><div class="text-xs text-slate-500 dark:text-slate-400">Founder, Dynamic Startups</div></div>
-            </div>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"Easy to use and clear analytics helped us hit our targets faster than ever."</p>
-          </article>
-          <article class="flex h-full flex-col gap-4 rounded-2xl border border-white/30 bg-white/70 p-6 shadow-lg backdrop-blur-sm transition hover:border-indigo-200/60 hover:shadow-xl dark:border-slate-700/50 dark:bg-slate-900/60 dark:hover:border-indigo-800/50">
-            <div class="flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Kim L." class="h-10 w-10 rounded-full object-cover" />
-              <div class="text-left"><div class="text-sm font-semibold text-slate-900 dark:text-slate-50">Kim L.</div><div class="text-xs text-slate-500 dark:text-slate-400">CEO, Echo Enterprises</div></div>
-            </div>
-            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">"The drag-and-drop editor is beautiful and intuitive – perfect for our small team."</p>
-          </article>
+      <section id="testimonials" class="py-20">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="font-bold text-3xl mb-12 text-slate-900 dark:text-slate-50">What Our Customers Say</h2>
+          <div class="grid gap-10 md:grid-cols-3">
+            <figure class="flex flex-col items-center text-center bg-white rounded-3xl p-8 shadow-lg dark:bg-slate-900">
+              <img class="mb-5 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Headshot of Rachel, a marketing manager" />
+              <blockquote class="text-gray-700 dark:text-gray-300 italic text-lg">"MailSpring simplified our email marketing and doubled our open rates within months!"</blockquote>
+              <figcaption class="mt-6 text-indigo-700 font-semibold">Rachel W., Marketing Manager</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center text-center bg-white rounded-3xl p-8 shadow-lg dark:bg-slate-900">
+              <img class="mb-5 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=200&q=80" alt="Headshot of Daniel, founder of a tech startup" />
+              <blockquote class="text-gray-700 dark:text-gray-300 italic text-lg">"The automation saved our team countless hours and boosted engagement significantly."</blockquote>
+              <figcaption class="mt-6 text-indigo-700 font-semibold">Daniel K., Founder</figcaption>
+            </figure>
+            <figure class="flex flex-col items-center text-center bg-white rounded-3xl p-8 shadow-lg dark:bg-slate-900">
+              <img class="mb-5 h-16 w-16 rounded-full object-cover" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=200&q=80" alt="Headshot of Emily, marketing lead" />
+              <blockquote class="text-gray-700 dark:text-gray-300 italic text-lg">"MailSpring’s reporting features gave us clear insights to refine our campaigns every month."</blockquote>
+              <figcaption class="mt-6 text-indigo-700 font-semibold">Emily R., Marketing Lead</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="border-y border-white/20 py-8 sm:py-20 dark:border-slate-800/60">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">Frequently Asked Questions</h2>
-          <p class="mt-3 text-sm text-slate-600 sm:text-base">Quick answers to common questions, no sales calls needed.</p>
+      <section id="faq" class="border-y border-white/20 py-16 dark:border-slate-800/60">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4 text-slate-900 dark:text-slate-50">Frequently Asked Questions</h2>
+          <p class="mb-10 text-slate-600 dark:text-slate-400 text-base">Answers to common questions to help you get started faster.</p>
+          <div class="space-y-5">
+            <div class="faq-item rounded-xl border border-white/30 bg-white/80 px-5 py-4 dark:border-slate-700 dark:bg-slate-900 transition">
+              <button type="button" class="faq-btn w-full flex items-center justify-between text-left text-lg font-semibold text-slate-900 dark:text-slate-50" aria-expanded="false" aria-controls="faq1">
+                Is there a free trial?
+                <svg class="h-6 w-6 text-indigo-600 transition-transform" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div id="faq1" class="faq-content mt-3 hidden text-slate-700 dark:text-slate-400 text-base" role="region" aria-labelledby="faq1">
+                Yes, we offer a 14-day free trial with no credit card required.
+              </div>
+            </div>
+            <div class="faq-item rounded-xl border border-white/30 bg-white/80 px-5 py-4 dark:border-slate-700 dark:bg-slate-900 transition">
+              <button type="button" class="faq-btn w-full flex items-center justify-between text-left text-lg font-semibold text-slate-900 dark:text-slate-50" aria-expanded="false" aria-controls="faq2">
+                Do I need technical skills?
+                <svg class="h-6 w-6 text-indigo-600 transition-transform" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div id="faq2" class="faq-content mt-3 hidden text-slate-700 dark:text-slate-400 text-base" role="region" aria-labelledby="faq2">
+                No, MailSpring's drag-and-drop interface was designed for users of all skill levels.
+              </div>
+            </div>
+            <div class="faq-item rounded-xl border border-white/30 bg-white/80 px-5 py-4 dark:border-slate-700 dark:bg-slate-900 transition">
+              <button type="button" class="faq-btn w-full flex items-center justify-between text-left text-lg font-semibold text-slate-900 dark:text-slate-50" aria-expanded="false" aria-controls="faq3">
+                Can I cancel anytime?
+                <svg class="h-6 w-6 text-indigo-600 transition-transform" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div id="faq3" class="faq-content mt-3 hidden text-slate-700 dark:text-slate-400 text-base" role="region" aria-labelledby="faq3">
+                Absolutely. You can cancel your subscription anytime, with no penalty.
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a href="mailto:chirag@bidx.ai" class="inline-flex bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-indigo-800 transition">Contact Support</a>
+          </div>
         </div>
-        <div class="mx-auto mt-10 max-w-3xl space-y-3">
-          <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">
-              Is there a free trial?
-              <span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span>
-            </button>
-            <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">
-              Yes, enjoy a free 14-day trial with no credit card required.
-            </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-20 bg-white dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-12 text-slate-900 dark:text-indigo-300">Pricing Plans</h2>
+          <div class="grid gap-12 md:grid-cols-3">
+            <article class="border border-indigo-200 rounded-2xl p-8 shadow-lg dark:border-indigo-700 dark:bg-slate-800">
+              <h3 class="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">Starter</h3>
+              <p class="mb-6 text-slate-700 dark:text-slate-300">Perfect for beginners and small newsletters.</p>
+              <p class="text-4xl font-bold mb-6 text-indigo-900 dark:text-white">$0<span class="text-lg font-normal">/month</span></p>
+              <ul class="mb-8 text-left text-slate-600 dark:text-slate-400 space-y-3">
+                <li>Up to 500 subscribers</li>
+                <li>Basic templates</li>
+                <li>Email support</li>
+              </ul>
+              <a href="#final-cta" class="btn-secondary inline-block w-full rounded-full bg-indigo-100 py-3 font-semibold text-indigo-700 hover:bg-indigo-200 dark:bg-indigo-700 dark:text-white dark:hover:bg-indigo-800">Get Started Free</a>
+            </article>
+            <article class="border border-indigo-600 rounded-2xl p-8 shadow-2xl bg-gradient-to-tr from-indigo-700 via-blue-700 to-cyan-600 text-white">
+              <h3 class="text-xl font-semibold mb-4">Pro</h3>
+              <p class="mb-6">For growing businesses with advanced needs.</p>
+              <p class="text-4xl font-bold mb-6">$29<span class="text-lg font-normal">/month</span></p>
+              <ul class="mb-8 space-y-3">
+                <li>Up to 10,000 subscribers</li>
+                <li>Advanced automation & workflows</li>
+                <li>Priority email & chat support</li>
+                <li>Segmentation & analytics</li>
+              </ul>
+              <a href="#final-cta" class="btn-primary inline-block w-full rounded-full py-3 font-semibold shadow-lg hover:scale-[1.05] transition transform">Start Free Trial</a>
+            </article>
+            <article class="border border-indigo-200 rounded-2xl p-8 shadow-lg dark:border-indigo-700 dark:bg-slate-800">
+              <h3 class="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">Enterprise</h3>
+              <p class="mb-6 text-slate-700 dark:text-slate-300">Customized plan for large teams and agencies.</p>
+              <p class="text-4xl font-bold mb-6 text-indigo-900 dark:text-white">Contact Us</p>
+              <ul class="mb-8 text-left text-slate-600 dark:text-slate-400 space-y-3">
+                <li>Unlimited subscribers & emails</li>
+                <li>Dedicated account manager</li>
+                <li>Advanced integrations & SLAs</li>
+              </ul>
+              <a href="mailto:chirag@bidx.ai" class="btn-secondary inline-block w-full rounded-full bg-indigo-100 py-3 font-semibold text-indigo-700 hover:bg-indigo-200 dark:bg-indigo-700 dark:text-white dark:hover:bg-indigo-800">Contact Sales</a>
+            </article>
           </div>
-          <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">
-              Do I need technical skills?
-              <span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span>
-            </button>
-            <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">
-              No, MailSpring is designed for non-technical users. Our drag-and-drop editor makes it simple for everyone.
-            </div>
-          </div>
-          <div class="faq-item overflow-hidden rounded-2xl border border-white/30 bg-white/70 dark:border-slate-700/50 dark:bg-slate-900/60">
-            <button type="button" class="faq-btn flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-slate-900 dark:text-slate-50 sm:px-5 sm:py-4">
-              Can I cancel anytime?
-              <span class="faq-icon ml-4 text-slate-400 transition-transform"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 9l-7 7-7-7"/></svg></span>
-            </button>
-            <div class="faq-content hidden border-t border-slate-100 px-4 pb-4 pt-2 text-sm text-slate-600 dark:border-slate-700 dark:text-slate-400 sm:px-5">
-              Yes, you can cancel your subscription at any time, no questions asked.
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 text-center">
-          <a href="mailto:chirag@bidx.ai" class="inline-flex rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-xl transition hover:bg-indigo-700">Contact Support</a>
         </div>
       </section>
 
       <!-- Final CTA -->
-      <section id="final-cta" class="py-8 sm:py-24">
-        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 px-8 py-14 text-center text-white shadow-2xl sm:px-12">
-          <div class="absolute -left-12 -top-12 h-32 w-32 rounded-full bg-white/10"></div>
-          <div class="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-white/10"></div>
-          <div class="relative mx-auto max-w-2xl">
-            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Ready to Start Growing?</h2>
-            <p class="mt-4 text-base text-blue-100/90 sm:text-lg">Sign up today and launch your first campaign in minutes!</p>
-            <div class="mt-6 flex justify-center">
-              <a href="#hero" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-base font-semibold text-blue-700 shadow-lg transition hover:scale-105 hover:shadow-xl">Start Free Trial</a>
-            </div>
-          </div>
-        </div>
+      <section id="final-cta" class="py-20 bg-gradient-to-r from-indigo-700 via-blue-700 to-cyan-600 rounded-3xl mx-auto max-w-4xl my-20 px-10 text-center shadow-xl text-white">
+        <h2 class="text-4xl font-bold tracking-tight mb-6">Ready to Transform Your Email Marketing?</h2>
+        <p class="mb-8 text-lg max-w-xl mx-auto">Join thousands of businesses growing faster with MailSpring’s smarter, simpler email marketing platform.</p>
+        <a href="#hero" class="inline-flex items-center gap-4 rounded-full bg-white px-12 py-5 font-bold text-indigo-700 shadow-lg hover:scale-105 transition transform">Start Your Free Trial</a>
       </section>
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="border-t border-white/20 bg-gradient-to-t from-slate-100 to-white dark:from-slate-950 dark:to-slate-900 dark:border-slate-800/60">
-    <div class="mx-auto flex max-w-[1600px] flex-col gap-6 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+    <div class="max-w-[1600px] mx-auto px-5 py-8 sm:flex sm:items-center sm:justify-between sm:px-6 flex-col gap-6 sm:flex-row text-sm text-slate-600 dark:text-slate-400">
       <div class="flex flex-col gap-2">
-        <div class="flex items-center gap-2"><span class="text-base font-semibold text-slate-900 dark:text-slate-50">MailSpring</span><span class="text-xs text-slate-400 dark:text-slate-500">Email Marketing Platform</span></div>
-        <p class="max-w-md text-xs text-slate-500 dark:text-slate-400">MailSpring helps small businesses and startups grow through smarter and simpler email marketing.</p>
-        <p class="text-xs text-slate-400 dark:text-slate-500">© <span id="year"></span> MailSpring Inc. All rights reserved.</p>
-      </div>
-      <div class="flex flex-col gap-4 sm:items-end">
-        <div class="flex gap-5 text-xs text-slate-500">
-          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-50">Privacy Policy</a>
-          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-50">Terms of Service</a>
-          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-50">Support</a>
-          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-50">Blog</a>
+        <div class="flex items-center gap-2 text-lg font-semibold text-slate-900 dark:text-slate-50 select-none">
+          <span>MailSpring</span>
+          <span class="text-xs text-indigo-600 dark:text-indigo-400 font-normal">Email Marketing Platform</span>
         </div>
+        <p>© <span id="year"></span> MailSpring Inc. All rights reserved.</p>
       </div>
+      <nav aria-label="Primary" class="flex flex-wrap gap-6 justify-center sm:justify-start">
+        <a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-indigo-600 transition">Terms of Service</a>
+        <a href="#" class="hover:text-indigo-600 transition">Support</a>
+        <a href="#" class="hover:text-indigo-600 transition">Blog</a>
+      </nav>
     </div>
   </footer>
 
   <script>
-(function () {
-  'use strict';
-  function initTheme() {
-    const toggle = () => {
-      const root = document.documentElement;
-      const isDark = root.classList.contains('dark');
-      root.classList.remove('light', 'dark');
-      root.classList.add(isDark ? 'light' : 'dark');
-      localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    };
-    document.getElementById('theme-toggle')?.addEventListener('click', toggle);
-    document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggle);
-  }
-  function initMobileMenu() {
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const iconMenu = document.getElementById('icon-menu');
-    const iconClose = document.getElementById('icon-close');
-    if (!btn || !menu) return;
-    btn.addEventListener('click', () => {
-      const isOpen = !menu.classList.contains('hidden');
-      menu.classList.toggle('hidden', isOpen);
-      if (iconMenu) iconMenu.classList.toggle('hidden', !isOpen);
-      if (iconClose) iconClose.classList.toggle('hidden', isOpen);
-    });
-    menu.querySelectorAll('.mobile-link').forEach((link) => {
-      link.addEventListener('click', () => {
-        menu.classList.add('hidden');
-        if (iconMenu) iconMenu.classList.remove('hidden');
-        if (iconClose) iconClose.classList.add('hidden');
-      });
-    });
-  }
-  function initHeroSlider() {
-    const slides = document.querySelectorAll('.hero-slide');
-    const dots = document.querySelectorAll('.hero-dot');
-    if (!slides.length) return;
-    let activeIndex = 0;
-    const total = slides.length;
-    function goTo(index) {
-      activeIndex = (index + total) % total;
-      slides.forEach((s, i) => {
-        s.classList.toggle('opacity-100', i === activeIndex);
-        s.classList.toggle('opacity-0', i !== activeIndex);
-      });
-      dots.forEach((d, i) => {
-        const isActive = i === activeIndex;
-        d.classList.toggle('w-5', isActive);
-        d.classList.toggle('w-2', !isActive);
-        d.classList.toggle('bg-blue-400', isActive);
-        d.classList.toggle('bg-white/60', !isActive);
-      });
-    }
-    dots.forEach((dot) => {
-      dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index, 10)));
-    });
-    setInterval(() => goTo(activeIndex + 1), 6000);
-  }
-  function initFaq() {
-    document.querySelectorAll('.faq-item').forEach((item) => {
-      const btn = item.querySelector('.faq-btn');
-      const content = item.querySelector('.faq-content');
-      const icon = item.querySelector('.faq-icon');
-      if (!btn || !content) return;
-      btn.addEventListener('click', () => {
-        const isOpen = !content.classList.contains('hidden');
-        document.querySelectorAll('.faq-content').forEach((c) => c.classList.add('hidden'));
-        document.querySelectorAll('.faq-icon').forEach((i) => i.classList.remove('rotate-180'));
-        if (!isOpen) {
-          content.classList.remove('hidden');
-          if (icon) icon.classList.add('rotate-180');
+    (function () {
+      'use strict';
+      // Theme toggle
+      function initTheme() {
+        const toggle = () => {
+          const root = document.documentElement;
+          const isDark = root.classList.contains('dark');
+          root.classList.remove('light', 'dark');
+          root.classList.add(isDark ? 'light' : 'dark');
+          localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        };
+        document.getElementById('theme-toggle')?.addEventListener('click', toggle);
+      }
+      // Mobile menu toggle
+      function initMobileMenu() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', () => {
+          const isOpen = !menu.classList.contains('hidden');
+          menu.classList.toggle('hidden', isOpen);
+          iconMenu?.classList.toggle('hidden', !isOpen);
+          iconClose?.classList.toggle('hidden', isOpen);
+        });
+        menu.querySelectorAll('.mobile-link').forEach((link) => {
+          link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            iconMenu?.classList.remove('hidden');
+            iconClose?.classList.add('hidden');
+          });
+        });
+      }
+      // Hero slider
+      function initHeroSlider() {
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.hero-dot');
+        if (!slides.length) return;
+        let index = 0;
+        const total = slides.length;
+        function goTo(i) {
+          index = (i + total) % total;
+          slides.forEach((s, idx) => {
+            s.classList.toggle('opacity-100', idx === index);
+            s.classList.toggle('opacity-0', idx !== index);
+          });
+          dots.forEach((d, idx) => {
+            const active = idx === index;
+            d.classList.toggle('w-5', active);
+            d.classList.toggle('w-2', !active);
+            d.classList.toggle('bg-blue-400', active);
+            d.classList.toggle('bg-white/60', !active);
+          });
         }
-      });
-    });
-  }
-  function initYear() {
-    const el = document.getElementById('year');
-    if (el) el.textContent = new Date().getFullYear();
-  }
-  initTheme();
-  initMobileMenu();
-  initHeroSlider();
-  initFaq();
-  initYear();
-})();
+        dots.forEach((dot) => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+        setInterval(() => goTo(index + 1), 6000);
+      }
+      // FAQ accordion toggle
+      function initFaq() {
+        document.querySelectorAll('.faq-item').forEach(item => {
+          const btn = item.querySelector('.faq-btn');
+          const content = item.querySelector('.faq-content');
+          if (!btn || !content) return;
+          btn.addEventListener('click', () => {
+            const open = !content.classList.contains('hidden');
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('.faq-btn svg').forEach(svg => svg.classList.remove('rotate-180'));
+            if (!open) {
+              content.classList.remove('hidden');
+              btn.querySelector('svg')?.classList.add('rotate-180');
+            }
+          });
+        });
+      }
+      // Populate current year in footer
+      function initYear() {
+        const el = document.getElementById('year');
+        if (el) el.textContent = new Date().getFullYear();
+      }
+      initTheme();
+      initMobileMenu();
+      initHeroSlider();
+      initFaq();
+      initYear();
+    })();
   </script>
 
-       <!--
-          PANDA ELEMENT SELECTION SCRIPT
-          ===============================
-          Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
-          Metadata captured: url, width, height, alt
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
+  <!--
+    PANDA ELEMENT SELECTION SCRIPT
+    ===============================
+    Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
+    Metadata captured: url, width, height, alt
+      ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+  -->
+  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
 
-        <!--
-          PANDA BRANDING SCRIPT
-          ====================
-          Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
-        <!--
-          PANDA AUTO RELOAD SCRIPT
-          ====================
-          Handles Panda HMR solution built on railway to hot reload changes in preview.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script>
-        const es = new EventSource("/__hmr");
-        es.onmessage = () => location.reload();
-        </script>
+  <!--
+    PANDA BRANDING SCRIPT
+    ====================
+    Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
+      ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+  -->
+  <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
 
-        
+  <!--
+    PANDA AUTO RELOAD SCRIPT
+    ====================
+    Handles Panda HMR solution built on railway to hot reload changes in preview.
+      ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+  -->
+  <script>
+  const es = new EventSource("/__hmr");
+  es.onmessage = () => location.reload();
+  </script>
+
 </body>
 </html>
